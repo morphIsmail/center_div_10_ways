@@ -1,0 +1,100 @@
+/* Общие стили */
+.parent {
+  width: 300px;
+  height: 300px;
+  background: #222;
+  margin-bottom: 10px;
+}
+.child {
+  background: orange;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  font-size: 35px;
+}
+/* Метод 1 */
+.p1 {
+  position: relative;
+}
+.c1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Метод 2 */
+.p2 {
+  position: relative;
+}
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+/* Метод 3 */
+.p3 {
+  position: relative;
+}
+.c3 {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+/* Метод 4 */
+.p4 {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.c4 {
+  align-self: center;
+}
+/* Метод 5 */
+.p5 {
+  display: flex;
+}
+.c5 {
+  margin: auto;
+}
+/* Метод 6 */
+.p6 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.c6 {
+  
+}
+/* Метод 7 */
+.p7 {
+  display: grid;
+  place-items: center;
+}
+.c7 {
+  
+}
+/* Метод 8 */
+.p8 {
+  display: grid;
+}
+.c8 {
+  align-self: center;
+  justify-self: center;
+}
+/* Метод 9 */
+.p9 {
+  display: grid;
+}
+.c9 {
+  place-self: center;
+}
+/* Метод 10 */
+.p10 {
+  display: grid;
+}
+.c10 {
+  margin: auto;
+}
